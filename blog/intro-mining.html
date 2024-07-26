@@ -52,7 +52,13 @@ size10 {
   	<p class="Verdana"><b>Functions</b></p>
 	<p class="Verdana">Mining has two main functions, the first being the enforcement of consensus rules and the second is currency issuance. I cannot stress enough however on how important enforcement of consensus rules is. Enforcement of consensus rules: Signet block signature validation, transaction information related validation, block size, etc.</p>
   	<p class="Verdana"><b>Process</b></p>
-	<p class="Verdana">Take current block's block header</p>
+	<p class="Verdana">When a miner mines a block, the mining software will continuously hash a block (containing transactions) until a hash is found that meets a target difficulty.</p>
+	<p class="Verdana">1. take current block's block header</p>
+	<p class="Verdana">2. append a nonce, starting at nonce = 0</p>
+	<p class="Verdana">3. hash data from #1 and #2</p>
+	<p class="Verdana">4. check hash versus target (provided by protocol)</p>
+	<p class="Verdana">5. if hash < target, puzzle is solved and the miner get rewarded.</p>
+	<p class="Verdana">6. else, we'll go back to the second step but increment nonce.</p>
   
   </tr>
 </table>
