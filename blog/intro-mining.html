@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,49 +37,19 @@ size10 {
 <body>
 
 <p>&nbsp;</p>
-<h1 id="introduction-to-mining">Introduction to Mining</h1>
-<ol>
-<li><p>Mining is the process of creating a block of transactions to be added to the Ethereum blockchain. Peers in the mining process are called &quot;miners&quot;:</p>
-</li>
-<li><p>To network</p>
-</li>
-<li><p>Miners provide processing power to network in exchange for chance to get rewarded (incentivized)</p>
-</li>
-<li><p>Mining is just an automated software that people run.</p>
-</li>
-<li><p>There is no human element to mining except setup + maintenance</p>
-</li>
-</ol>
-<p>It&#39;s funny how when I first learning about mining in crypto, I was thinking someone was literally mining the coins in some way or maybe it was like one of those clicker games!</p>
-<h2 id="functions">Functions</h2>
-<p>Mining has two main functions, the first being the enforcement of consensus rules and the second is currency issuance. I cannot stress enough however on how important enforcement of consensus rules is.</p>
-<p>Enforcement of consensus rules: Signet block signature validation, transaction information related validation, block size, etc.</p>
-<h2 id="process">Process</h2>
-<p>When a miner mines a block, the mining software will continuously hash a block (containing transactions) until a hash is found that meets a target difficulty.</p>
-<p>Take current block&#39;s block header
-Append a nonce, starting at nonce = 0
-Hash data from #1 and #2
-Check hash versus target (provided by protocol)
-If hash &lt; target, puzzle is solved and the miner get rewarded.
-Else, we&#39;ll go back to the second step but increment nonce.
-It is rather simple.</p>
-<p>##Proof of Work
-It is a consensus mechanism on how decentralized networks like Bitcoin and Ethereum decide what blocks/transactions are considered “valid” and who gets to add new blocks to the chain.</p>
-<p>There is another consensus mechanism, proof-of-stake. ETH uses PoS while BTC uses PoW.</p>
-<p>In PoW, in order to add a block and receive a reward, a miner must present some type of proof that they spent significant resources securing the network. The proof of work is the solution to the mining process. This is by repeatedly hashing until we find a hash lower than the target difficulty. Keep in mind, miners compete to find a valid proof of work every 10 minutes.</p>
-<p>Because it is a consensus mechanism, decentralized networks will need to agree on things like account balances and the order of transactions. This ensures &quot;double spending&quot; one&#39;s coins is prevented and that everyone is following the rules, making proof-of-work-based networks resistant to attack. Seeing from a security point of view, the consensus mechanism provides security to a blockchain network because it demands that everyone follow the consensus rules if they want to participate!</p>
-<h2 id="hashing">Hashing</h2>
-<p>It amazes me everyday of how all of this just works.</p>
-<p>Proof of Work is an extremely essential component to Bitcoin and it gives us insights on how it works for Bitcoin. The solution to a computationally expensive challenge for computers is proof of work in a very short explanation. For example, we could program a computer to search for a hash starting with three 5&#39;s. This will certainly take some time guessing.</p>
-<p>sha256(&quot;0&quot;); // 5feceb…</p>
-<p>sha256(&quot;1&quot;); // 6b86b2…</p>
-<p>sha256(&quot;2&quot;); // d4735e…</p>
-<p>sha256(&quot;5118&quot;); // 555850…</p>
-<p>As you can see, a real complex mathematical problem will just eat up the computer&#39;s processing resources. In the above scenario, The difficulty to come up with this input gets exponentially harder the more 5s we require the output hash to start with.</p>
-<p>What does PoW solve? It first and foremost prevents spamming due to how computationally expensive it to spam. This is also insuring that there are requirements to make each hash unique.</p>
-<p>What role does it play in the Bitcoin system? Proof of Work is essentially the security of the Bitcoin system.</p>
-<p>I&#39;ve heard of a 51% attack, what is it? Well this is a very interesting concept. In order to overpower this network and force your own version of the truth, you would need to come up with more computing power than all the nodes in the entire system. But you need to have 51% of the total hashing power in the network.</p>
-
+<br />
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><span class="Heading2">About</span></td>
+  </tr>
+  <tr>
+    <td><p class="Verdana">Interested in defi, security, systems, history, and startups.</p>
+	<p class="Verdana">Currently, thinking about blockchain-based infra and assisting protocols building on Arweave + AO with content at <a href="https://www.communitylabs.com/">Community Labs</a>.</p>
+	<p class="Verdana">I tend to spend my free time reading, doing <a class="link" href="https://bithiah.koshy.au/hobbies" target="_blank">sports</a>, watching b/w films, <a class="link" href="https://ebird.org/profile/MzQ1MjU0Mg/AU" target="_blank">birding</a>, shifting <a class="link" href="https://ch.tetr.io/u/devargnes" target="_blank">tetris</a>, bushwalking, and many other things.</p></tr>
+</table>
+<br />
+<hr width="1000" size="1" noshade="noshade" />
+<br />
 <p>&nbsp; </p>
 <p></p>
 <p>&nbsp; </p>
