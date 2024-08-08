@@ -1,40 +1,84 @@
 
-						<!DOCTYPE html>
-						<html lang="en">
-						<head>
-							<meta charset="UTF-8">
-							<meta name="viewport" content="width=device-width, initial-scale=1">
 
-							<title>bithiah</title>
-							<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/63845509">
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+		<link rel="icon" type="image/png" href="/favicon.png">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+		<style>
+			* {
+				font-family: monospace;
+				color: rgb(255, 255, 255);
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #000000;
+			}
 
-							<link href="/style.css" rel="stylesheet" type="text/css" media="all">
-						</head>
+			pre {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			}
 
-						<body>
-							<main>
-								<a href="/">&lt;--- home</a>
-								<br><br>
-								<header id="project-title">
-					
-									<h2>Sports and competitive stuff</h2>
-								</header>
+			#wrapper {
+				width: 100vw;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
 
-								<section id="project-desc">
-									<p><i>CTF Teams</i>: <span class="grey">1. <a href="https://ctftime.org/team/271774">0xE0F</a> (late '23 - early '24) 2. <a href="https://ctftime.org/team/226953">CarpetBombingMagpie</a> 3. <a href="https://ctftime.org/team/200887">Kawaii101Yummy</a> (2023)</span></p>
-												<p><i>Competitive programming</i>: <span class="grey">Google Foobar challenge (got call), USACO silver, AIO</span></p>
-												<p><i>Rowing</i>: <span class="grey">tbd</span></p>
-												<p><i>Fencing</i>: <span class="grey">2x Australian national junior team finalist (<a href="https://www.ausfencing.org/competitions/womens-foil-teams-melbourne-8/">foil</a> & <a href="https://www.ausfencing.org/competitions/womens-sabre-teams-melbourne-7/">sabre</a>) + dozens state individual medals in u15, u17, u20</span></p>
-												<p><i>Ballet</i>: <span class="grey">Grade 7 RAD Classical</span>
-												<p><i>Cross country</i>: <span class="grey">2 x SSV Eastern Metropolitan Regions top 30 (3km)</span></p>
-												<p><i>Track</i>: <span class="grey">2 x SSV Eastern Metropolitan Regions top 7 (800m, 1500m)</span></p>
+			#content {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
 
-									
-								</section>
-							</main>
+			@media screen and (max-width: 600px) {
+				* {
+					font-size: 22px;
+				}
+			}
+		</style>
+		<title>bithiah - hobbies</title>
+		<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/63845509">
+	</head>
+	<body>
+		<div id="wrapper">
 
-							<br><br>
+			<pre>
+				⠀
+			</pre>
+			<div id="content">
+				<h1>Sports and competitive stuff</h1>
+				<br>
 
-							
-						</body>
-						</html>
+					<section id="project-desc">
+						<p><i>CTF Teams</i>: <span class="grey">1. <a href="https://ctftime.org/team/271774">0xE0F</a> (late '23 - early '24) 2. <a href="https://ctftime.org/team/226953">CarpetBombingMagpie</a> 3. <a href="https://ctftime.org/team/200887">Kawaii101Yummy</a> (2023)</span></p><br>
+									<p><i>Competitive programming</i>: <span class="grey">Google Foobar challenge (got call), USACO silver, AIO</span></p><br>
+						<br>
+									<p><i>Rowing</i>: <span class="grey">tbd</span></p>
+						<br>
+									<p><i>Fencing</i>: <span class="grey">2x Australian national junior team finalist (<a href="https://www.ausfencing.org/competitions/womens-foil-teams-melbourne-8/">foil</a> & <a href="https://www.ausfencing.org/competitions/womens-sabre-teams-melbourne-7/">sabre</a>) + dozens state individual medals in u15, u17, u20</span></p>
+						<br>
+									<p><i>Ballet</i>: <span class="grey">Grade 7 RAD Classical</span><br>
+										<br>
+									<p><i>Cross country</i>: <span class="grey">2 x SSV Eastern Metropolitan Regions top 30 (3km)</span></p>
+						<br>
+									<p><i>Track</i>: <span class="grey">2 x SSV Eastern Metropolitan Regions top 7 (800m, 1500m)</span></p>
+
+
+					</section>
+
+			</div>
+		</div>
+		<script>
+			$("#wrapper").css("display", "none");
+			$("#wrapper").fadeIn(2000);
+		</script>
+	</body>
+</html>
