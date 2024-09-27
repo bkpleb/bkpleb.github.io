@@ -33,7 +33,7 @@
         .head {
         grid-area: 'header';
             grid-column: 1 / 4;
-            background-image: url(/gallery/river.jpeg); background-size: cover; height: 100px; box-shadow: 0 0 5px 5px white inset;
+            background-image: url(/gallery/river.png); background-size: cover; height: 100px; box-shadow: 0 0 5px 5px white inset;
         }
         .main {
         grid-area: 'main';
