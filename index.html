@@ -1,157 +1,282 @@
-
-
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="https://avatars.githubusercontent.com/u/63845509?v=4"
+        />
+        <title>Bithiah Koshy</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --background: #fdf9f3;
+                --foreground: #3c3836;
+                --accent: #f25a49;
+                --muted: #a89984;
+                --surface: #f5f0e8;
+                --surface-2: #eee8df;
+            }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/63845509?v=4">
-  <title>Bithiah Koshy</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/63845509">
-  <style>
-    :root {
-      --background: #fdf9f3;
-      --foreground: #3c3836;
-      --accent: #f25a49;
-      --muted: #a89984;
-      --surface: #f5f0e8;
-      --surface-2: #eee8df;
-    }
+            body {
+                font-family: "EB Garamond", serif;
+                font-size: 18px;
+                line-height: 1.6;
+                color: var(--foreground);
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: var(--background);
+            }
 
-    body {
-      font-family: "EB Garamond", serif;
-      font-size: 18px;
-      /* Increased font size */
-      line-height: 1.6;
-      color: var(--foreground);
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: var(--background);
-      /* Changed background color */
-    }
+            .container {
+                width: 87%;
+                margin: auto;
+            }
 
-    .back-button {
-      display: inline-block;
+            h1 {
+                font-size: 48px;
+                font-weight: normal;
+                color: var(--foreground);
+                text-align: center;
+                margin-bottom: 40px;
+            }
 
-      background-color: var(--surface);
-      color: var(--foreground);
-      text-decoration: none;
-      font-weight: regular;
-      font-family: Arial, sans-serif;
-    }
+            .two-column-layout {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
 
-    .description {
-      background-color: var(--surface);
-      padding: 20px;
-      margin: 20px 0;
-    }
+            .left-column {
+                padding-right: 20px;
+                border-right: 1px solid var(--surface-2);
+            }
 
-    h1 {
-      font-size: 48px;
-      /* Increased font size */
-      font-weight: normal;
-      color: var(--foreground);
-    }
+            .right-column {
+                padding-left: 20px;
+            }
 
-    .authors {
-      font-style: italic;
-      color: var(--muted);
-    }
+            a {
+                color: var(--accent);
+                font-weight: normal;
+            }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+            a:hover {
+                text-decoration: underline;
+            }
 
-    li {
-      margin-bottom: 10px;
-    }
+            ol {
+                padding-left: 20px;
+                margin: 15px 0;
+            }
 
-    .menu-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: var(--surface-2);
-      color: var(--foreground);
-      text-decoration: none;
-      font-weight: bold;
-      font-family: Arial, sans-serif;
-    }
+            li {
+                margin-bottom: 10px;
+            }
 
-    a {
-      color: var(--accent);
-      font-weight: normal; /* Links will not be bold by default */
-    }
+            p {
+                margin-bottom: 15px;
+            }
 
-    a:hover {
-      text-decoration: underline; /* Links will be underlined when hovered over */
-    }
+            hr {
+                border: none;
+                height: 1px;
+                background-color: var(--surface-2);
+                margin: 40px 0 20px 0;
+            }
 
-    .blog-list {
-      margin-top: 20px;
-    }
+            .quote {
+                text-align: center;
+                font-style: italic;
+                color: var(--muted);
+            }
 
-    .blog-item {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: baseline;
-    }
+            figure {
+                margin: 20px auto;
+                text-align: center;
+            }
 
-    .blog-date {
-      font-size: 0.9em;
-      color: var(--muted);
-      width: 80px;
-      display: inline-block;
-    }
+            img {
+                max-width: 500px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                border-radius: 8px;
+            }
 
-    h2 {
-      font-size: 32px;
-      font-weight: normal;
-      margin-top: 30px;
-      color: var(--foreground);
-    }
-  </style>
-</head>
+            figcaption {
+                margin-top: 8px;
+                font-size: 14px;
+                color: var(--muted);
+                font-style: italic;
+            }
 
-<body>
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .two-column-layout {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
 
+                .left-column {
+                    border-right: none;
+                    border-bottom: 1px solid var(--surface-2);
+                    padding-right: 0;
+                    padding-bottom: 20px;
+                }
 
-  <h1 style="text-align: center;"></h1>
-  <div style="margin: auto; width: 87%;">
-    <h1>Bithiah Koshy</h1>
-    <p>Just doing things. Focused on rollups, markets, stables & policy.</p>
-    <p>Feel free to DM on <a href="https://twitter.com/bithiahkoshy">twitter</a> or <a href="https://t.me/bithiahk">telegram</a>.</p>
-    <p><b><i>Currently:</i></b></p>
-    <ol>
-    <li>Content writer @ <a href="https://www.gelato.network/">Gelato</a>, learning and writing everyday on rollups & related things</li>
-    <li>Running and writing <a href="https://stablecoinmusings.substack.com/">Stablecoin Musings</a> newsletter (slowly coming out of hiatus)</li>
-    </ol>
-    <p><i>Here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602">non-exhaustive list</a> of public writings and personal <a href="https://bithiahk.substack.com/">substack</a>.</i></p>
+                .right-column {
+                    padding-left: 0;
+                    padding-top: 20px;
+                }
 
-    <p><b><i>Previously:</i></b></p>
-    <p></p>
-    <ol>
-      <li>Ad-hoc editor @ <a href="https://shoalresearch.xyz/">Shoal Research</a> and @ <a href="https://research.2077.xyz/"> 2077 research</a>, focused on stables & <a href="https://x.com/2077Research/status/1868702981228839312">financial infra</a></li>
-      <li>Associate writer @ <a href="https://www.communitylabs.com/">Community Labs</a>, focused on decentralized compute and got exposed for the first time to the VC model (more specifically venture studio)</li>
-      <li>Saw the dark side of digital assets and learned a bit on crypto AML for three months at an Israeli crypto forensic startup</li>
-      <li>Wanted to get into crypto so interned at @ Market Mapper, a Haifa-based crypto technical indicator platform startup doing content and socials </li>
-      <li>Contributed to Mozilla for two years: <a href="https://wiki.mozilla.org/Support/TCP-ETP">TCP/ETP project</a>, got added to <a href="https://www.mozilla.org/credits/">about:credits</a></li>
-      <li>Everyone I knew was doing competitive programming, but I didn't enjoy it and moved on to CTFs (did much better)</li>
-    </ol>
-    <p><b><i>When I get time:</i></b></p>
-    <p></p>
-    <ol>
-      <li>I love to do <a href="https://www.strava.com/athletes/170196835">gravel riding</a>, run track (middle to long-distance), bushwalk (always trying to find new trails), swim and go birding</li>
-      <li>Do a bunch of <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49">other things</a>, like trying to become an Olympic foilist before a severe injury forced me to crash out</p></li>
-    </ol>
-    <hr>
-    <p><i>“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”
-― Ralph Waldo Emerson</i></p>
-  </div>
+                h1 {
+                    font-size: 36px;
+                }
+            }
 
-</body>
+            @media (max-width: 480px) {
+                body {
+                    font-size: 16px;
+                    padding: 15px;
+                }
 
+                h1 {
+                    font-size: 28px;
+                }
+
+                .container {
+                    width: 95%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bithiah Koshy</h1>
+
+            <div class="two-column-layout">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <p>
+                        <b><i>Currently:</i></b>
+                    </p>
+                    <ol>
+                        <li>Experimenting and building pipeline tooling</li>
+                        <li>
+                            Running and writing
+                            <a href="https://stablecoinmusings.substack.com/"
+                                >Stablecoin Musings</a
+                            >
+                            newsletter (slowly coming out of hiatus)
+                        </li>
+                        <li>
+                            Ad-hoc research analyst @
+                            <a href="https://dewhales.com/">DeWhales</a>
+                        </li>
+                    </ol>
+
+                    <p>
+                        <i
+                            >Here's a
+                            <a
+                                href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602"
+                                >non-exhaustive list</a
+                            >
+                            of public writings and personal
+                            <a href="https://bithiahk.substack.com/">substack</a
+                            >.</i
+                        >
+                    </p>
+                    <p>
+                        Feel free to DM on
+                        <a href="https://twitter.com/bithiahkoshy">twitter</a>
+                        or <a href="https://t.me/bithiahk">telegram</a>.
+                    </p>
+                    <figure>
+                        <img src="IMG_1408.jpeg" alt="me in the wilderness" />
+                        <figcaption>me in the wilderness</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <p>
+                        <b><i>Previously:</i></b>
+                    </p>
+                    <ol>
+                        <li>
+                            Technical content writer @
+                            <a href="https://www.gelato.cloud/"
+                                >Gelato Network</a
+                            >
+                            and dabbled in 4337 data (decoding UserOps was a
+                            learning curve)
+                        </li>
+                        <li>
+                            Ad-hoc editor @
+                            <a href="https://shoalresearch.xyz/"
+                                >Shoal Research</a
+                            >
+                            and @
+                            <a href="https://research.2077.xyz/">
+                                2077 research</a
+                            >, focused on stables &
+                            <a
+                                href="https://x.com/2077Research/status/1868702981228839312"
+                                >financial infra</a
+                            >
+                        </li>
+                        <li>
+                            Associate writer @
+                            <a href="https://www.communitylabs.com/"
+                                >Community Labs</a
+                            >, focused on decentralized compute and got exposed
+                            for the first time to the VC model (more
+                            specifically venture studio)
+                        </li>
+                        <li>
+                            Analyst @ Israeli crypto forensic startup, saw the
+                            dark side of digital assets and learned a bit on
+                            crypto AML
+                        </li>
+                        <li>
+                            Interned at a Haifa-based crypto technical indicator
+                            platform startup, discovered TA wasn't my thing & I
+                            rather play long games
+                        </li>
+                        <li>
+                            Was into browser security and did some Mozilla stuff
+                            such as
+                            <a href="https://wiki.mozilla.org/Support/TCP-ETP"
+                                >TCP/ETP</a
+                            >
+                            project (got added to
+                            <a href="https://www.mozilla.org/credits/"
+                                >about:credits</a
+                            >), and the rest is history
+                        </li>
+                    </ol>
+
+                    <p>
+                        <b><i>Other than that:</i></b>
+                    </p>
+                    <p>
+                        I'm an amateur gravel cyclist, middle-distance track
+                        runner, and swimmer, among
+                        <a
+                            href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49"
+                            >other things</a
+                        >.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
