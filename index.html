@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-            rel="icon"
-            href="https://avatars.githubusercontent.com/u/63845509?v=4"
-        />
-     <title>Bithiah Koshy</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/63845509?v=4" />
+    <title>Bithiah Koshy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,372 +16,254 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 1.1875rem;
+            font-weight: 400;
+            line-height: 1.7;
+            color: #222;
+            background: #f2eee3;
+            padding: 4rem 3rem 4rem;
+            min-height: 100vh;
         }
 
-        .container {
-            max-width: 1200px;
+        .page {
+            display: grid;
+            grid-template-columns: minmax(0, 38rem) minmax(16rem, 1fr);
+            gap: 2.5rem 4.5rem;
+            align-items: start;
+            max-width: 76rem;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
-        /* Header */
-        header {
-            padding: 20px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 18px;
-            font-weight: 600;
-            color: #000;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #666;
-            font-size: 16px;
-            position: relative;
-        }
-
-        .nav-links a.active::before {
-            content: '●';
-            margin-right: 8px;
-            color: #000;
-        }
-
-        .reach-out-btn {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        /* Main Content */
         main {
-            padding: 60px 0;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 38rem;
         }
 
-        .intro-text {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
+        .collage {
+            position: sticky;
+            top: 5rem;
+            width: 100%;
+            max-width: 27rem;
+            min-height: 52rem;
+            margin-left: auto;
         }
 
-        .intro-text p {
-            font-size: 18px;
-            line-height: 1.4;
-            color: #333;
-            margin-bottom: 30px;
+        .collage__item {
+            position: absolute;
+            overflow: hidden;
+            line-height: 0;
+            background: #f7f4ee;
+            padding: 0.3rem 0.3rem 0.3rem;
+            border-radius: 1px;
+            box-shadow:
+                0 1px 0 rgba(255, 255, 255, 0.65) inset,
+                0 18px 40px rgba(55, 42, 28, 0.14),
+                0 6px 14px rgba(55, 42, 28, 0.08);
+            transform-origin: center center;
         }
 
-        .intro-text p:last-child {
+        .collage__item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .collage__item--herd {
+            width: 84%;
+            top: 0;
+            right: -2%;
+            left: auto;
+            aspect-ratio: 3 / 2;
+            transform: rotate(2deg);
+            z-index: 2;
+        }
+
+        .collage__item--tractor {
+            width: 86%;
+            top: 25%;
+            left: 4%;
+            aspect-ratio: 3 / 2;
+            transform: rotate(-4.5deg);
+            z-index: 4;
+        }
+
+        .collage__item--shadow {
+            width: 42%;
+            top: 40%;
+            left: -5%;
+            aspect-ratio: 3 / 4;
+            transform: rotate(-6.5deg);
+            z-index: 6;
+        }
+
+        .collage__item--crush {
+            width: 44%;
+            top: 45%;
+            right: -3%;
+            left: auto;
+            aspect-ratio: 3 / 4;
+            transform: rotate(5deg);
+            z-index: 5;
+        }
+
+        .collage__item--plowed {
+            width: 82%;
+            top: 63%;
+            left: 3%;
+            aspect-ratio: 3 / 2;
+            transform: rotate(5.5deg);
+            z-index: 3;
+        }
+
+        .collage__item--boots {
+            width: 88%;
+            top: 68%;
+            right: -2%;
+            left: auto;
+            aspect-ratio: 3 / 2;
+            transform: rotate(0deg);
+            z-index: 4;
+        }
+
+        @media (max-width: 960px) {
+            .page {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .collage {
+                position: relative;
+                top: auto;
+                max-width: 22rem;
+                min-height: 40rem;
+                margin: 2.5rem auto 0;
+            }
+
+            .collage__item--herd {
+                transform: rotate(3deg);
+            }
+
+            .collage__item--plowed {
+                transform: rotate(-3deg);
+            }
+
+            .collage__item--tractor {
+                transform: rotate(-3.5deg);
+            }
+
+            .collage__item--boots {
+                transform: rotate(5deg);
+            }
+
+            .collage__item--shadow {
+                transform: rotate(5deg);
+            }
+
+            .collage__item--crush {
+                transform: rotate(-6deg);
+            }
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        p:last-child {
             margin-bottom: 0;
         }
 
-        .intro-text a {
+        .years {
+            margin-bottom: 0.75rem;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1.35rem;
+            margin-bottom: 1.75rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+            padding-left: 0.15rem;
+        }
+
+        li::marker {
+            font-size: 0.85em;
+        }
+
+        .writing {
+            margin-bottom: 1.5rem;
+            line-height: 1.65;
+        }
+
+        .writing em {
+            font-style: italic;
+        }
+
+        a {
             color: inherit;
             text-decoration: underline;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+            text-decoration-color: rgba(34, 34, 34, 0.35);
         }
 
-        .intro-text ul {
-            list-style: none;
-            padding-left: 0;
-            margin-top: 20px;
-        }
-
-        .intro-text li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-        }
-
-        .intro-text li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #333;
-        }
-
-        /* Startups Table */
-        .startups-list {
-            margin-top: 40px;
-        }
-
-        .startup-item {
-            display: grid;
-            grid-template-columns: 80px 200px 1fr 150px;
-            gap: 40px;
-            padding: 12px 0;
-            border-bottom: 1px solid #f0f0f0;
-            align-items: center;
-        }
-
-        .startup-item:last-child {
-            border-bottom: none;
-        }
-
-        .stage-tag {
-            background-color: #999;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 12px;
-            text-align: center;
-            font-weight: 500;
-        }
-
-        .stage-tag.archives {
-            background-color: #ddd;
-            color: #666;
-        }
-
-        .company-name {
-            font-size: 16px;
-            font-weight: 500;
-            color: #000;
-        }
-
-        .categories {
-            font-size: 16px;
-            color: #999;
-        }
-
-        .years {
-            font-size: 16px;
-            color: #000;
-            text-align: right;
-        }
-
-        /* Enhanced Pill Buttons */
-        .social-buttons {
-            margin-top: 36px; 
-            display: flex; 
-            gap: 16px;
-        }
-
-        .pill-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            padding: 14px 32px 14px 20px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            backdrop-filter: blur(10px);
-        }
-
-        .pill-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-            border-radius: inherit;
-            pointer-events: none;
-        }
-
-        .pill-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-        }
-
-        .pill-button:active {
-            transform: translateY(0);
-            transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .pill-button-x {
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .pill-button-x:hover {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-        }
-
-        .pill-button-telegram {
-            background: linear-gradient(135deg, #229ED9 0%, #37b6e9 50%, #4fc3f7 100%);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .pill-button-telegram:hover {
-            background: linear-gradient(135deg, #1976d2 0%, #229ED9 50%, #37b6e9 100%);
-            box-shadow: 0 8px 32px rgba(34, 158, 217, 0.3);
-        }
-
-        .pill-button svg {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
-        }
-
-        .pill-button span {
-            font-family: inherit;
-            letter-spacing: 0.025em;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .startup-item {
-                grid-template-columns: 1fr;
-                gap: 10px;
-                text-align: left;
-            }
-            
-            .intro-text p {
-                font-size: 20px;
-            }
-            
-            .social-buttons {
-                flex-direction: column;
-                gap: 12px;
-            }
-            
-            .pill-button {
-                justify-content: center;
-                padding: 16px 24px;
-            }
+        a:hover {
+            text-decoration-color: rgba(34, 34, 34, 0.7);
         }
     </style>
 </head>
 <body>
-
-
+    <div class="page">
     <main>
-        <div class="container">
-            <div class="intro-text">    
-                <p>✻ Bithiah Koshy</p>
-                <p>Currently:</p>
-                <ul>
-                    <li>Collaborating with web3 protocols & founders looking to meet their content needs, particularly for technical marketing. If that sounds like you, hmu! Here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writings and contributions.</li>
-                    <li>Running and writing <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a> newsletter, dedicated to the policy and regulatory space around stablecoins, CBDCs, and related FMIs. 
-                    <li>Studying agriculture @ <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a> (into agricultural robotics).
-                    <li>I enjoy road cycling, playing the bowlback mandolin, among <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.</li>
-                </ul>
-                <br>
-                <p>Collaborations:</p>
-                <ul>
-                    
-                    <li>
-                        Content @ 
-                        <a href="https://www.coingecko.com/author/Bithiah%20Koshy" style="display: inline-flex; align-items: center;" target="_blank">
-                            CoinGecko
-                            <img src="coingecko.png" alt="CoinGecko logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (mar '26 - present)
-                    </li>
-                    
-                    <li>
-                        Technical content @ 
-                        <a href="https://chainstack.com" style="display: inline-flex; align-items: center;" target="_blank">
-                            Chainstack
-                            <img src="chainstack-logo-blue.jpg" alt="Chainstack logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (oct '25 - present)
-                    </li>
-                    <li>
-                        Founder-led content @ 
-                        <a href="http://reya.network" style="display: inline-flex; align-items: center;" target="_blank">
-                            ReyaChain
-                            <img src="reya.png" alt="ReyaChain logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (sept '25 - present)
-                    </li>
-                    <li>
-                        Explained series & macro @ 
-                        <a href="https://www.dewhales.com/" style="display: inline-flex; align-items: center;" target="_blank">
-                            Dewhales Capital
-                            <img src="dewhales.jpg" alt="Dewhales Capital logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (jul '25 - present)
-                        
-                    </li>
-                    <li>
-                        Editor @ 
-                        <a href="https://shoalresearch.xyz/" style="display: inline-flex; align-items: center;" target="_blank">
-                            Shoal Research
-                            <img src="shoal.jpg" alt="Shoal Research logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (jan - mar '25, nov - dec '25)
-                       
-                    </li>
-                    <li>
-                        Internal research support on stables @ 
-                        <a href="https://hazeflow.xyz" style="display: inline-flex; align-items: center;" target="_blank">
-                            Hazeflow
-                            <img src="RG9sIJxT_400x400.jpg" alt="Hazeflow logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (jun '25)
-                        
-                    </li>
-                    <li>
-                       
-                        Ad-hoc editor @ <a href="https://x.com/2077Research/status/1868702981228839312" style="display: inline-flex; align-items: center;">
-                            2077 Research
-                            <img src="2077.jpg" alt="2077 Research logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (dec '24)
-                    </li>
-               
-                </ul>
-                <br>
-                <p>Experience:</p>
-                <ul>
-                    <li>
-                        Technical content @ 
-                        <a href="https://www.gelato.cloud/" style="display: inline-flex; align-items: center;">
-                            Gelato Network
-                            <img src="gelato.jpg" alt="Gelato Network logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (feb - jul '25)
-                    </li>
-                    <li>Assoc. writer @ <a href="https://www.communitylabs.com/" style="display: inline-flex; align-items: center;">
-                            Community Labs
-                            <img src="clabs.jpg" alt="Community Labs logo" style="height: 18px; width: auto; margin-left: 6px; vertical-align: middle; border-radius: 3px;">
-                        </a> (jul '24 - feb '25), intern prior (feb - jul '24)</li>
-                    <li>Analyst @ Israeli crypto forensic startup (nov '23 - jan '24) + few other places.</li>
-                </ul>
-                <br>
-                <p style="text-align: center;"><a href="https://x.com/bithiahkoshy" target="_blank">twitter/x</a> ✶ <a href="https://t.me/bithiahk" target="_blank">telegram</a> ✶ <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">linkedin</a> ✶ <a href="https://github.com/bkpleb" target="_blank">github</a> ✶ <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">instagram</a></p>
-                <p style="text-align: center; font-size: 12px;"><i>an '07 kid based in melb, au 🇦🇺</i></p>
-            </div>
-        </div>
+        <p>
+            I'm a 19-year-old based in Melbourne. I collaborate with web3 protocols and founders on technical marketing — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs.
+        </p>
+
+        <p class="writing">
+            <em>Writing/written for: </em>
+            <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
+            <a href="https://chainstack.com" target="_blank">Chainstack</a>,
+            <a href="https://www.dewhales.com/" target="_blank">Dewhales Capital</a>,
+            <a href="https://www.gelato.cloud/" target="_blank">Gelato Network</a>,
+            <a href="https://shoalresearch.xyz/" target="_blank">Shoal Research</a>,
+            <a href="http://reya.network" target="_blank">ReyaChain</a>,
+            <a href="https://www.communitylabs.com/" target="_blank">Community Labs</a>,
+            <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>, and more.
+        </p>
+
+        <p>
+            Passionate about AgTech and bioacoustics research, I'm currently studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a> (heavy coursework focus on livestock management). When I get time to spare, I enjoy road cycling, playing the bowlback mandolin, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.
+        </p>
+   
+
+       
+
+        <p>
+            Find me on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://x.com/bithiahkoshy" target="_blank">Twitter/X</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>,  or <a href="https://github.com/bkpleb" target="_blank">GitHub</a>.
+        </p>
     </main>
+
+    <aside class="collage">
+        <figure class="collage__item collage__item--herd">
+            <img src="images/cattle-herd.png" alt="Herd of black cattle on a grassy hill under blue sky" width="800" height="533" loading="lazy" decoding="async">
+        </figure>
+        <figure class="collage__item collage__item--tractor">
+            <img src="images/tractor-field.png" alt="Red tractor in a green field, seen from the car" width="800" height="533" loading="lazy" decoding="async">
+        </figure>
+        <figure class="collage__item collage__item--shadow">
+            <img src="images/shadow-path.png" alt="Shadow on a gravel path in the countryside" width="600" height="800" loading="lazy" decoding="async">
+        </figure>
+        <figure class="collage__item collage__item--crush">
+            <img src="images/cattle-crush.png" alt="Black cow in a cattle crush on the farm" width="600" height="800" loading="lazy" decoding="async">
+        </figure>
+        <figure class="collage__item collage__item--plowed">
+            <img src="images/plowed-field.png" alt="Freshly plowed rows in a field with fence and trees beyond" width="800" height="533" loading="lazy" decoding="async">
+        </figure>
+   
+    </aside>
+    </div>
 </body>
 </html>
