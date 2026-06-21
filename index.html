@@ -84,9 +84,45 @@
         a:hover {
             text-decoration-color: rgba(34, 34, 34, 0.7);
         }
+
+        .image-right {
+            position: fixed;
+            top: 4rem;
+            left: calc(3rem + 38rem + 3rem);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .img-main {
+            display: block;
+            width: 450px;
+            height: auto;
+        }
+
+        .img-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .img-secondary,
+        .img-third {
+            display: block;
+            width: 400px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
+    <div class="image-right">
+        <img class="img-main" src="images/cattle-crush.png" alt="Cattle crush">
+        <div class="img-stack">
+            <img class="img-secondary" src="images/cattle-herd.png" alt="Cattle herd">
+            <img class="img-third" src="images/plowed-field.png" alt="Ploughing">
+        </div>
+    </div>
+
     <main>
         <p>I'm a 19-year-old based in Melbourne and a freshman at Deakin University studying biomed, majoring in medical biotech. Passionate about vertically integrated Agri-biotech systems and biomass fermentation for famine-proof nutrition.</p>
 
@@ -118,6 +154,7 @@
         <p>
             Find me on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://x.com/bithiahkoshy" target="_blank">Twitter/X</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>, or <a href="https://github.com/bkpleb" target="_blank">GitHub</a>.
         </p>
+
     </main>
 </body>
 </html>
