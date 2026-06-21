@@ -21,148 +21,13 @@
             font-weight: 400;
             line-height: 1.7;
             color: #222;
-            background: #f2eee3;
+            background: #ffffff;
             padding: 4rem 3rem 4rem;
             min-height: 100vh;
         }
 
-        .page {
-            display: grid;
-            grid-template-columns: minmax(0, 38rem) minmax(16rem, 1fr);
-            gap: 2.5rem 4.5rem;
-            align-items: start;
-            max-width: 76rem;
-            margin: 0 auto;
-        }
-
         main {
             max-width: 38rem;
-        }
-
-        .collage {
-            position: sticky;
-            top: 5rem;
-            width: 100%;
-            max-width: 27rem;
-            min-height: 52rem;
-            margin-left: auto;
-        }
-
-        .collage__item {
-            position: absolute;
-            overflow: hidden;
-            line-height: 0;
-            background: #f7f4ee;
-            padding: 0.3rem 0.3rem 0.3rem;
-            border-radius: 1px;
-            box-shadow:
-                0 1px 0 rgba(255, 255, 255, 0.65) inset,
-                0 18px 40px rgba(55, 42, 28, 0.14),
-                0 6px 14px rgba(55, 42, 28, 0.08);
-            transform-origin: center center;
-        }
-
-        .collage__item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .collage__item--herd {
-            width: 84%;
-            top: 0;
-            right: -2%;
-            left: auto;
-            aspect-ratio: 3 / 2;
-            transform: rotate(2deg);
-            z-index: 2;
-        }
-
-        .collage__item--tractor {
-            width: 86%;
-            top: 25%;
-            left: 4%;
-            aspect-ratio: 3 / 2;
-            transform: rotate(-4.5deg);
-            z-index: 4;
-        }
-
-        .collage__item--shadow {
-            width: 42%;
-            top: 40%;
-            left: -5%;
-            aspect-ratio: 3 / 4;
-            transform: rotate(-6.5deg);
-            z-index: 6;
-        }
-
-        .collage__item--crush {
-            width: 44%;
-            top: 45%;
-            right: -3%;
-            left: auto;
-            aspect-ratio: 3 / 4;
-            transform: rotate(5deg);
-            z-index: 5;
-        }
-
-        .collage__item--plowed {
-            width: 82%;
-            top: 63%;
-            left: 3%;
-            aspect-ratio: 3 / 2;
-            transform: rotate(5.5deg);
-            z-index: 3;
-        }
-
-        .collage__item--boots {
-            width: 88%;
-            top: 68%;
-            right: -2%;
-            left: auto;
-            aspect-ratio: 3 / 2;
-            transform: rotate(0deg);
-            z-index: 4;
-        }
-
-        @media (max-width: 960px) {
-            .page {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-
-            .collage {
-                position: relative;
-                top: auto;
-                max-width: 22rem;
-                min-height: 40rem;
-                margin: 2.5rem auto 0;
-            }
-
-            .collage__item--herd {
-                transform: rotate(3deg);
-            }
-
-            .collage__item--plowed {
-                transform: rotate(-3deg);
-            }
-
-            .collage__item--tractor {
-                transform: rotate(-3.5deg);
-            }
-
-            .collage__item--boots {
-                transform: rotate(5deg);
-            }
-
-            .collage__item--shadow {
-                transform: rotate(5deg);
-            }
-
-            .collage__item--crush {
-                transform: rotate(-6deg);
-            }
         }
 
         p {
@@ -171,6 +36,12 @@
 
         p:last-child {
             margin-bottom: 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(34, 34, 34, 0.12);
+            margin: 2rem 0;
         }
 
         .years {
@@ -216,12 +87,16 @@
     </style>
 </head>
 <body>
-    <div class="page">
     <main>
-        <p>
-            I'm a 19-year-old based in Melbourne. I collaborate with web3 protocols and founders on technical marketing — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs.
-        </p>
+        <p>I'm a 19-year-old based in Melbourne and a freshman at Deakin University studying biomed, majoring in medical biotech. Passionate about vertically integrated Agri-biotech systems and biomass fermentation for famine-proof nutrition.</p>
 
+        <p>When I get time to spare, I enjoy road cycling, playing the bowlback mandolin, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.</p>
+
+        <hr>
+
+        <p>
+            For work, I collaborate with web3 protocols and founders on technical marketing — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs.
+        </p>
         <p class="writing">
             <em>Writing/written for: </em>
             <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
@@ -234,36 +109,15 @@
             <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>, and more.
         </p>
 
-        <p>
-            Passionate about Agri-biotech and bioacoustics research, I'm currently studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a> (heavy coursework focus on livestock management) and incoming at Deakin University in Biomedical Science. When I get time to spare, I enjoy road cycling, playing the bowlback mandolin, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.
-        </p>
-   
+        <hr>
 
-       
+        <p>I've always been deeply drawn to the land, hence my interest in agriculture. For little over two months, before needing to go to university, I was studying agriculture at Northern Lodge, learning everything from cropping and cattle management to ag machinery.</p>
+
+        <hr>
 
         <p>
-            Find me on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://x.com/bithiahkoshy" target="_blank">Twitter/X</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>,  or <a href="https://github.com/bkpleb" target="_blank">GitHub</a>.
+            Find me on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://x.com/bithiahkoshy" target="_blank">Twitter/X</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>, or <a href="https://github.com/bkpleb" target="_blank">GitHub</a>.
         </p>
     </main>
-
-    <aside class="collage">
-        <figure class="collage__item collage__item--herd">
-            <img src="images/cattle-herd.png" alt="Herd of black cattle on a grassy hill under blue sky" width="800" height="533" loading="lazy" decoding="async">
-        </figure>
-        <figure class="collage__item collage__item--tractor">
-            <img src="images/tractor-field.png" alt="Red tractor in a green field, seen from the car" width="800" height="533" loading="lazy" decoding="async">
-        </figure>
-        <figure class="collage__item collage__item--shadow">
-            <img src="images/shadow-path.png" alt="Shadow on a gravel path in the countryside" width="600" height="800" loading="lazy" decoding="async">
-        </figure>
-        <figure class="collage__item collage__item--crush">
-            <img src="images/cattle-crush.png" alt="Black cow in a cattle crush on the farm" width="600" height="800" loading="lazy" decoding="async">
-        </figure>
-        <figure class="collage__item collage__item--plowed">
-            <img src="images/plowed-field.png" alt="Freshly plowed rows in a field with fence and trees beyond" width="800" height="533" loading="lazy" decoding="async">
-        </figure>
-   
-    </aside>
-    </div>
 </body>
 </html>
