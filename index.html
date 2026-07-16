@@ -8,146 +8,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'EB Garamond', Georgia, serif;
-            font-size: 1.1875rem;
-            font-weight: 400;
-            line-height: 1.7;
-            color: #222;
-            background: #ffffff;
-            padding: 4rem 3rem 4rem;
-            min-height: 100vh;
-        }
-
-        main {
-            max-width: 38rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid rgba(34, 34, 34, 0.12);
-            margin: 2rem 0;
-        }
-
-        .years {
-            margin-bottom: 0.75rem;
-        }
-
-        ul {
-            list-style: disc;
-            padding-left: 1.35rem;
-            margin-bottom: 1.75rem;
-        }
-
-        li {
-            margin-bottom: 0.4rem;
-            padding-left: 0.15rem;
-        }
-
-        li::marker {
-            font-size: 0.85em;
-        }
-
-        .writing {
-            margin-bottom: 1.5rem;
-            line-height: 1.65;
-        }
-
-        .writing em {
-            font-style: italic;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 3px;
-            text-decoration-color: rgba(34, 34, 34, 0.35);
-        }
-
-        a:hover {
-            text-decoration-color: rgba(34, 34, 34, 0.7);
-        }
-
-        .image-right {
-            position: fixed;
-            top: 4rem;
-            left: calc(3rem + 38rem + 3rem);
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .img-main {
-            display: block;
-            width: 450px;
-            height: auto;
-        }
-
-        .img-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .img-secondary,
-        .img-third {
-            display: block;
-            width: 400px;
-            height: auto;
-        }
+    body {
+      margin: 0;
+      font-family: palatino;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center; /* Centers the container */
+    }
+    
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px; /* Space between image and text */
+    }
+    
+    .text {
+      text-align: left; /* Left-aligns text inside */
+      width: 650px; /* Fixed width so the block centers as a unit */
+      max-width: 80vw;
+    }
+    
+    img {
+      max-width: 400px; /* Adjust as needed */
+      height: auto;
+      margin-left: 120px; /* Moves image slightly to the right */
+    }
     </style>
-</head>
-<body>
+    </head>
+    <body>
+    
+    <div class="container">
+      <div class="content">
+        <div class="text">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>Bithiah Koshy</h2>
+          <p>I'm a 19-year-old freshman @ Deakin University studying biomedical science, majoring in environmental health.</p>
+          <p><i><b>Agriculture & food systems</b></i></p>
+          <p>I've always been drawn to the land. For a little over two months, before heading off to uni, I was studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a>, learning as much as I could on cropping, cattle management and ag machinery.</p>
+          <p>Traditional agriculture is on its way to having a slow and painful death. With environmental changes/degradation, increasing water scarcity and fuel/input costs, it's becoming unsustainble. Though the breakthrough of autonomous agricultural robotics and AI is exciting, the way we farm is still fundamentally unchanged.</p>
+          <p>Passionate about improving the farm and food system in Australia through vertical farming, agri-biotech, precision fermentation and bioprocessing for ensuring Australian food security. </p>
+          <p><i><b>Blockchain infrastructure & stablecoin design</b></i></p>
+          <p>Since 2023, I've been collaborating with web3 protocols and founders on technical marketing focused on infra — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs.
+          </p>
+          <p class="writing">
+              <em>Writing/written for: </em>
+              <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
+              <a href="https://chainstack.com" target="_blank">Chainstack</a>,
+              <a href="https://www.dewhales.com/" target="_blank">Dewhales Capital</a>,
+              <a href="https://www.gelato.cloud/" target="_blank">Gelato Network</a>,
+              <a href="https://shoalresearch.xyz/" target="_blank">Shoal Research</a>,
+              <a href="http://reya.network" target="_blank">ReyaChain</a>,
+              <a href="https://www.communitylabs.com/" target="_blank">Community Labs</a>,
+              <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>, and more.
+          <p>In a past life, I worked on crypto Anti-Money Laundering (AML)/Counter-Terrorist Financing (CTF) cases.</p>
+          </p>
+          <p><i><b>Other things</b></i></p>
+          <p>When I get time to spare, I enjoy road and gravel cycling, playing the bowlback mandolin, bushwalking, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.</p>
+          <p><i><b>Contact</b></i></p>
+          <p>Feel free to reach out on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a> or <a href="https://x.com/bithiahkoshy" target="_blank">X/Twitter</a>.</p>
+            
+        </div>
+    
+      </div>
+    </div>
 
-    <main>
-        <p>I'm a 19-year-old based in Melbourne and a freshman at Deakin University studying biomed, majoring in environmental health. Passionate about Agri-biotech systems, precision fermentation, cellular agriculture and bioprocessing for resilient food systems.</p>
-
-        <p>When I get time to spare, I enjoy road cycling, playing the bowlback mandolin, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.</p>
-
-        <hr>
-
-        <p>
-            For work, I've been collaborating with web3 protocols and founders on technical marketing for a little over two years — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs.
-        </p>
-        <p class="writing">
-            <em>Writing/written for: </em>
-            <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
-            <a href="https://chainstack.com" target="_blank">Chainstack</a>,
-            <a href="https://www.dewhales.com/" target="_blank">Dewhales Capital</a>,
-            <a href="https://www.gelato.cloud/" target="_blank">Gelato Network</a>,
-            <a href="https://shoalresearch.xyz/" target="_blank">Shoal Research</a>,
-            <a href="http://reya.network" target="_blank">ReyaChain</a>,
-            <a href="https://www.communitylabs.com/" target="_blank">Community Labs</a>,
-            <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>, and more.
-        </p>
-
-        <hr>
-
-        <p>I've always been deeply drawn to the land, hence my interest in agriculture. For a little over two months, before needing to go to university, I was studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="blank"> Northern Lodge</a>, learning everything from cropping and cattle management to ag machinery.</p>
-
-        <hr>
-
-        <p>
-            Find me on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://x.com/bithiahkoshy" target="_blank">Twitter/X</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>, or <a href="https://github.com/bkpleb" target="_blank">GitHub</a>.
-        </p>
-
-    </main>
 </body>
 </html>
+
