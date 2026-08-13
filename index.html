@@ -1,98 +1,132 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/63845509?v=4" />
-    <title>Bithiah Koshy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
-    <!DOCTYPE html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    
-    <style>
-    body {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bithiah Koshy</title>
+  <style>
+    :root {
+      --bg: #f8f4e9;
+      --text: #333333;
+      --muted: #a8a49a;
+      --rule: #e3dfd4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
-      font-family: palatino;
-      font-size: 15px;
-      letter-spacing: 1px;
-    }
-    
-    .container {
-      display: flex;
-      justify-content: center;
-      padding: 48px 24px 40px;
-    }
-    
-    .content {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px; /* Space between image and text */
-    }
-    
-    .text {
-      text-align: left; /* Left-aligns text inside */
-      width: 650px; /* Fixed width so the block centers as a unit */
-      max-width: 80vw;
-    }
-    
-    .text ul {
-      margin: 0 0 1rem;
-      padding-left: 1.25rem;
+      padding: 0;
+      background-color: var(--bg);
     }
 
-    .text li {
-      margin-bottom: 0.5rem;
+    body {
+      color: var(--text);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
+
+    main {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 140px 24px 100px;
+    }
+
+    h1 {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0 0 28px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 20px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 0 0 4px;
+    }
+
+    li::marker {
+      color: var(--muted);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: rgba(51, 51, 51, 0.35);
+    }
+
+    a:hover {
+      text-decoration-color: var(--text);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 36px 0 28px;
+    }
+
+    .nav a {
+      display: inline-block;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .nav a:hover {
+      color: var(--text);
+    }
+
+    .social {
+      margin-top: 32px;
+    }
+
+    .social a {
+      color: black;
+      text-decoration: none;
+      margin-right: 48px;
+    }
+
+    .social a:last-child {
+      margin-right: 0;
+    }
+
+    .social a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bithiah Koshy</h1>
+
+    <p>A 19-year-old passionate about the intersection of agriculture, stablecoins/tokenization and biotech.</p>
+    <p>Currently studying biomed, writing <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7479529509512183808" target="_blank">Reimagining Ag</a> newsletter and lurking around @ <a href="https://www.calmtreasury.xyz/" target="_blank">Calm</a>.</p>
     
-    .images {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-left: 120px;
-    }
+    <p><b>Agriculture</b></p>
+    <p>I'm broadly interested in digital livestock data and ag lending.</p>
 
-    img {
-      max-width: 500px;
-      height: auto;
-    }
-
-    .micro-row {
-      display: flex;
-      flex-direction: row;
-      gap: 12px;
-      align-items: flex-end;
-    }
-
-    .micro {
-      max-width: 220px;
-    }
-
-    .calves {
-      max-width: 266px;
-    }
-    </style>
-    </head>
-    <body>
-    
-    <div class="container">
-      <div class="content">
-        <div class="text">
-          <h2>Bithiah Koshy</h2>
-          <hr>    
-          <p></p>
-          <p>I'm a 19-year-old freshman @ Deakin University studying biomedical science, majoring in environmental health.</p>
-          <p>Passionate about the intersection of agriculture, stablecoins/RWAs and biotech.</p>
-
-          <p><i><b>Agriculture</b></i></p>
-          <p>I've always been drawn to the land. For a little over two months, before heading off to uni, I was studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a>, learning as much as I could on cattle management, cropping and ag machinery. Fell in love with Aussie agriculture and now slowly but surely working towards my goal in helping farmers with agtech. Check out my <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">visual diary</a>.</p>
-         
-          <p><i><b>Blockchain infrastructure & stablecoin design</b></i></p>
-          <p>Since 2023, I've been collaborating with web3 protocols and founders on technical marketing focused on infra and stables — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. </p>
-          <p class="writing">
-              <em>Writing/written for: </em>
+    <p>For a little over two months, before heading off to uni, I was studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a>, learning as much as I could on cattle management, cropping and ag machinery.
+    </p>
+    <p></p>
+    <p><b>Blockchain infrastructure & stablecoin design</b></p>
+<p>Since 2023, I've been collaborating with web3 protocols and founders on technical marketing focused on infra and stables — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs. </p>
+   
+    <p></p>
+     <p>Writing/written for: 
               <a href="https://chainstack.com" target="_blank">Chainstack</a>,
               <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
               <a href="https://www.dewhales.com/" target="_blank">Dewhales Capital</a>,
@@ -101,27 +135,20 @@
               <a href="http://reya.network" target="_blank">ReyaChain</a>,
               <a href="https://www.communitylabs.com/" target="_blank">Community Labs</a>,
               <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>, and more.
-          <p>I also run and write <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs (on hiatus). </p>
-          <p>Stablecoin payment rails will eat up <a href="https://stablecoinmusings.substack.com/p/the-case-of-usd-access-in-tonga-and" target="_blank"> correspondent banking</a>, be the way <a href="https://chainstack.com/the-agentic-payments-landscape/" target="_blank">agents</a> make high-frequency micro-payments and so much more.
-          During my time at Community Labs, I contributed to <a href="https://3764602983-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FMomCXXEtfcmR69mZMdiV%2Fuploads%2FOqqv4F7bX8xxGDGatpAI%2Fastro_lite_paper_v2_latex.pdf?alt=media&token=02d09dbd-df88-483b-a060-e559cbec0e1d" target="_blank">Astro’s USDA stablecoin litepaper</a>. </p>
-          <p>In a past life, I worked on crypto Anti-Money Laundering (AML)/Counter-Terrorist Financing (CTF) cases.</p>
           </p>
-          <p><i><b>Other things</b></i></p>
-          <p>When I get time to spare, I enjoy road and gravel cycling, playing the bowlback mandolin, bushwalking, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.</p>
-          <p><i><b>Contact</b></i></p>
-          <p>Feel free to reach out on <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>, <a href="https://t.me/bithiahk" target="_blank">Telegram</a>, <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a> or <a href="https://x.com/bithiahkoshy" target="_blank">X/Twitter</a>.</p>
-            
-        </div>
-        <div class="images">
-          <img src="IMG_1210.jpeg">
-          <div class="micro-row">
-            <img src="micro.png" class="micro">
-            <img src="calves.png" class="calves">
-          </div>
-        </div>
-    
-      </div>
-    </div>
+         <p><b>Other</b></p>
+          <p>When I get time to spare, I enjoy road and gravel cycling, playing the bowlback mandolin, bushwalking, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.
+          </p>
+    <hr />
 
+    <div class="social">
+      <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>
+      <a href="https://t.me/bithiahk" target="_blank">Telegram</a>
+      <a href="https://x.com/bithiahkoshy" target="_blank">X</a>
+      <a href="https://github.com/bkpleb" target="_blank">Github</a>
+
+    </div>
+  </main>
 </body>
 </html>
