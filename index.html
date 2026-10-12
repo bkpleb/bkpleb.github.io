@@ -5,13 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bithiah Koshy</title>
   <style>
-    :root {
-      --bg: #f8f4e9;
-      --text: #333333;
-      --muted: #a8a49a;
-      --rule: #e3dfd4;
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -19,137 +12,159 @@
     html, body {
       margin: 0;
       padding: 0;
-      background-color: var(--bg);
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
-      color: var(--text);
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.65;
+      min-height: 100vh;
+      background: #f7f3ea;
+      color: #1f2a26;
+      font-family: Georgia, "Palatino Linotype", Palatino, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.55;
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
     }
 
     main {
-      max-width: 520px;
+      width: 100%;
+      max-width: 600px;
       margin: 0 auto;
-      padding: 140px 24px 100px;
+      padding: clamp(40px, 8vh, 96px) clamp(20px, 5vw, 32px) clamp(56px, 10vh, 120px);
+      text-align: left;
     }
 
     h1 {
-      font-size: 17px;
-      font-weight: 700;
-      margin: 0 0 28px;
-      letter-spacing: 0;
+      margin: 0 0 15px;
+      color: #1b4d3e;
+      font-size: clamp(24px, 5vw, 32px);
+      font-weight: 500;
+      letter-spacing: 0.01em;
     }
 
     p {
-      margin: 0 0 20px;
-    }
-
-    ul {
-      margin: 0 0 20px;
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 0 0 4px;
-    }
-
-    li::marker {
-      color: var(--muted);
+      margin: 0;
+      overflow-wrap: break-word;
     }
 
     a {
-      color: inherit;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      text-decoration-thickness: 1px;
-      text-decoration-color: rgba(51, 51, 51, 0.35);
-    }
-
-    a:hover {
-      text-decoration-color: var(--text);
+      overflow-wrap: anywhere;
     }
 
     hr {
       border: none;
-      border-top: 1px solid var(--rule);
-      margin: 36px 0 28px;
+      border-top: 1px solid #d8d0c2;
+      width: 100%;
+      margin: 0;
     }
 
-    .nav a {
-      display: inline-block;
-      color: var(--muted);
+    nav.social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 4px;
+      gap: 12px 28px;
+    }
+
+    nav.social a {
+      color: #1f2a26;
       text-decoration: none;
-      margin-bottom: 16px;
+      font-size: 13px;
+      font-variant: small-caps;
+      letter-spacing: 0.12em;
+      padding: 6px 0;
+      white-space: nowrap;
     }
 
-    .nav a:hover {
-      color: var(--text);
+    nav.social a:hover {
+      color: #1b4d3e;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
     }
 
-    .social {
-      margin-top: 32px;
+    @media (min-width: 720px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav.social {
+        flex-wrap: nowrap;
+        gap: 0;
+      }
+
+      nav.social a {
+        padding: 4px 0;
+      }
     }
 
-    .social a {
-      color: black;
-      text-decoration: none;
-      margin-right: 48px;
-    }
+    @media (max-width: 519px) {
+      body {
+        font-size: 15px;
+        line-height: 1.6;
+      }
 
-    .social a:last-child {
-      margin-right: 0;
-    }
+      nav.social {
+        justify-content: flex-start;
+        column-gap: 28px;
+        row-gap: 4px;
+      }
 
-    .social a:hover {
-      color: var(--text);
+      nav.social a {
+        letter-spacing: 0.08em;
+        font-size: 13px;
+      }
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Bithiah Koshy</h1>
-
-    <p>A 19-year-old passionate about the intersection of stablecoins/tokenization and agribusiness.</p>
-    <p>Currently studying biomed @ Deakin, writing <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7479529509512183808" target="_blank">Reimagining Ag</a> newsletter, lurking around @ <a href="https://www.calmtreasury.xyz/" target="_blank">Calm</a> and just building stuff.</p>
-    
-    <p><b>Blockchain infrastructure & stablecoin design</b></p>
-<p>Since 2023, I've been collaborating with web3 protocols and founders on technical marketing focused on infra and stables — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs (on hiatus). </p>
+    <p>A 19-year-old incoming law student (LLB) at La Trobe University.</p>
+   <br>
+   <p><b>Law</b></p>
+   <p>I'm yet to commence my law studies and though it's far too early to commit to a specific area of law, I'm interested in cyber, natural resources and public law.</p>
+   <br>
+   <p>Fundamentally, I believe in the protection of individual digital sovereignty, civil liberties and the preservation of Australian natural resources and the right to farm.</p>
    
-    <p></p>
-     <p>Writing/written for: 
-              <a href="https://chainstack.com" target="_blank">Chainstack</a>,
-              <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
-              <a href="https://www.dewhales.com/" target="_blank">Dewhales Capital</a>,
-              <a href="https://www.gelato.cloud/" target="_blank">Gelato Network</a>,
-              <a href="https://shoalresearch.xyz/" target="_blank">Shoal Research</a>,
-              <a href="http://reya.network" target="_blank">ReyaChain</a>,
-              <a href="https://www.communitylabs.com/" target="_blank">Community Labs</a>,
-              <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>, and more.
-          </p>
-
-    <p><b>Agriculture</b></p>
-    <p>I'm broadly interested in agribusiness and precision ag.</p>
-
-    <p>For a little over two months, before heading off to uni, I was studying agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a>, learning as much as I could on cattle management, cropping and ag machinery.
-    </p>
-    <p></p>
-         <p><b>Other</b></p>
-          <p>When I get time to spare, I enjoy road and gravel cycling, playing the bowlback mandolin, bushwalking, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.
-          </p>
-    <hr />
-
-    <div class="social">
-      <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">Instagram</a>
-      <a href="https://t.me/bithiahk" target="_blank">Telegram</a>
-      <a href="https://x.com/bithiahkoshy" target="_blank">X</a>
-      <a href="https://github.com/bkpleb" target="_blank">Github</a>
-
-    </div>
+   <br>
+   <p><b>Blockchain infrastructure</b></p>
+   <p>Since 2023, I've been collaborating with web3 protocols and founders on technical marketing focused on infra and stables — here's a <a href="https://bithiah.notion.site/Bithiah-s-Writing-11036112212c80419531c3427aa0d602" target="_blank">non-exhaustive list</a> of public writing. I also run <a href="https://stablecoinmusings.substack.com/" target="_blank">Stablecoin Musings</a>, a newsletter on policies around stablecoins, CBDCs and related FMIs (on hiatus). </p>
+   <br>
+   <p>Writing/written for: 
+    <a href="https://chainstack.com" target="_blank">Chainstack</a>,
+    <a href="https://www.coingecko.com/author/Bithiah%20Koshy" target="_blank">CoinGecko</a>,
+    <a href="https://www.dewhales.com/" target="_blank">Dewhales Capital</a>,
+    <a href="https://www.gelato.cloud/" target="_blank">Gelato Network</a>,
+    <a href="https://shoalresearch.xyz/" target="_blank">Shoal Research</a>,
+    <a href="http://reya.network" target="_blank">ReyaChain</a>,
+    <a href="https://www.communitylabs.com/" target="_blank">Community Labs</a> and
+    <a href="https://x.com/2077Research/status/1868702981228839312" target="_blank">2077 Research</a>.
+</p>
+<br>
+   <p><b>Environment and farming systems</b></p>
+   <p>Running on a near weekly basis, <a href="https://www.linkedin.com/newsletters/7479529509512183808/?displayConfirmation=true" target="_blank">R-Ag</a> is a newsletter focused on the broader Australian agribusiness landscape and other relevant topics I find interesting.</p>
+   <br>
+   <p>For a little over two months, I studied agriculture at <a href="https://www.melbournepolytechnic.edu.au/locations/northern-lodge-at-eden-park/" target="_blank">Northern Lodge</a>, learning as much as I could on cattle management and cropping - a journey I <a href="https://www.instagram.com/bkoshy.ag/" target="_blank">documented</a>.
+   </p>
+   <br>
+   <p><b>Other</b></p>
+   <p>I enjoy <a href="https://www.strava.com/athletes/1750987904" target="_blank">road and gravel cycling</a>, and bushwalking, amongst <a href="https://bithiah.notion.site/Hobbies-11036112212c809c93f2d1fed1064a49" target="_blank">other things</a>.
+  </p>
+  <br>
+<hr />
+<br>
+    <nav class="social">
+      <a href="https://www.linkedin.com/in/bitkoshy/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/bkoshy.ag/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://t.me/bithiahk" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://x.com/bithiahkoshy" target="_blank" rel="noopener">X</a>
+      <a href="https://github.com/bkpleb" target="_blank" rel="noopener">Github</a>
+    </nav>
   </main>
 </body>
 </html>
